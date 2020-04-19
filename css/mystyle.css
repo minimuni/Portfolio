@@ -1065,6 +1065,13 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
 		margin-top: 145px;
 		margin-bottom: 100px;
 	}
+	.content__related-title {
+		font-size: .7em;
+		margin: 0;
+		padding: 0.5em;
+		font-family: 'S-CoreDream-7ExtraBold';
+	}
+	
 }
 
 @media (max-width: 415px) and (min-width: 410px){
