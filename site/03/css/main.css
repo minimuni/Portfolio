@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+/* layout */
+.inner {
+    width: 970px;
+    margin: 0 auto;
+}
+
+/* main css */
+#header {
+    padding: 36px 0 86px;
+    border-top: 8px solid #1b1b1b;
+}
+#header .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#header .logo a {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+#header .nav {
+    float: right;
+}
+#header .nav li {
+    float: left;
+    width: 120px;
+    margin-right: 10px;
+}
+#header .nav li:last-child {
+    margin-right: 0;
+}
+#header .nav li a {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #bbb;
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+#header .nav li a:hover {
+    border-bottom-color: #1b1b1b;
+    text-indent: 0.3em;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+}
+#container .content li {
+    float: left;
+    width: 33.3333%;
+}
+#container .content li a {
+    position: relative;
+    display: block;
+    transition: all .5s;
+}
+#container .content li:nth-child(1) a {background-color: #969696}
+#container .content li:nth-child(1) a:hover {background-color: #f6365a}
+#container .content li:nth-child(2) a {background-color: #848484}
+#container .content li:nth-child(2) a:hover {background-color: #13f59a}
+#container .content li:nth-child(3) a {background-color: #9e9e9e}
+#container .content li:nth-child(3) a:hover {background-color: #ffde3d}
+#container .content li:nth-child(4) a {background-color: #bfbfbf}
+#container .content li:nth-child(4) a:hover {background-color: #879ff7}
+#container .content li:nth-child(5) a {background-color: #929292}
+#container .content li:nth-child(5) a:hover {background-color: #2f9bf6}
+#container .content li:nth-child(6) a {background-color: #aaaaaa}
+#container .content li:nth-child(6) a:hover {background-color: #f6735e}
+#container .content li a img {
+    width: 100%;
+}
+#container .content li a strong {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    transition: all .5s;
+}
+#container .content li a:hover strong {
+    opacity: 1;
+}
+
+#footer {
+    padding-bottom: 52px;
+    color: #1b1b1b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+#footer .btmLogo {
+    float: left;
+    width: 26%;
+    padding-right: 15px;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+#footer address {
+    float: left;
+    width: 26%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+#footer .email {
+    float: left;
+    width: 26%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+#footer .email a {
+    border-bottom: 1px solid #aaa;
+    color: #1b1b1b;
+    text-decoration: none;
+    transition: all .3s;
+}
+#footer .email a:hover {
+    border-bottom-color: #1b1b1b;
+    color: #333333;
+}
+#footer .sns {
+    float: left;
+    width: 22%;
+    box-sizing: border-box;
+    text-align: right;
+}
+#footer .sns li {
+    display: inline;
+    line-height: 0;
+}
+#footer .sns li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+/* #footer .sns li a[title *= 'twitter'] {
+    background: url(./../img/ico-twt.svg);
+}
+#footer .sns li a[title *= 'github'] {
+    background: url(./../img/ico-github.svg);
+} */
+#footer .btmLogo:before,
+#footer address:before,
+#footer .email:before,
+#footer .sns:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+}

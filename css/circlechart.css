@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; 
+	font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; 
+	font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; 
+	font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal;
+}
+
+.bar{
+	margin: 2% auto; float:left; 
+}
+
+
+.chart {
+	font-family: 'S-CoreDream-6Bold';
+	margin: 0 auto;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+}
+.div{
+
+ margin-bottom: 5%;
+	width: 92%;
+	height: 20%;
+	margin: 0 auto;
+	background-image:url(imgs/00.png);
+	background-repeat:no-repeat;
+  background-size: cover;
+	z-index: 100;
+}
+#ability{margin-bottom:2%; margin-top: 6%;}
+
+/*원 위치*/
+.chart canvas {
+  position: absolute;
+  top: -50%;
+  margin-left:-60%;
+	margin-top: 30%;
+}
+
+/*안의 숫자 위치*/
+.percent {
+  display: inline-block;
+  line-height: 75px;
+
+
+}
+/*안의 숫자 스타일*/
+.chart span{
+
+	font-size:20px;
+	color: #4a4a4a;
+	font-family: 'Arial', 'sans-serif';
+	font-weight: 700;
+}
+
+.textP { 
+	font-family: 'S-CoreDream-6Bold';
+	text-align:center; 
+	padding: 0 8px;
+	width: 250px;
+	font-size: 14px;
+ }
+ .textP>h3 {
+    margin-top: 15px;
+    color: #4a4a4a;
+    font: 600 1rem "S-CoreDream-6Bold";
+
+}
+.textP > h3:last-child(4){color:#000;}
+
+.textP .line_text {
+    border-top: 1px solid #4a4a4a4a;
+    padding-top: 8px;
+    margin-top: 8px;
+    font: 400 14px "S-CoreDream-6Bold";
+    color: #4a4a4a;
+}
+.last-chart{
+	margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {	
+	
+	.last-chart{
+		margin-bottom: 90px;
+	}
+
+}

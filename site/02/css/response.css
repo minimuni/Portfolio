@@ -1,0 +1,498 @@
+/* 반응형 */
+
+@media screen and (max-width: 1200px) {
+    .wrap {
+        width: auto;
+    }
+  /*  .banner_inner{
+        width: auto;
+    }*/
+    #header .fixed {
+        width: auto;
+    }
+    #about #p1 {
+        width: auto;
+    }
+    #footer .footer_inner {
+        width: auto;
+    }
+    .inner {
+        width: auto;
+    }
+    #tour .click {
+        width: auto;
+        position: fixed;
+        left: 10%;
+        right: 10%;
+    }
+
+    #banner a {
+      bottom: 26%;
+      left: 50%;
+
+    }
+
+  /*  .banner_inner{
+        height: 700px;
+    }*/
+    #banner .banner_text p.top {
+        font-size: 30px;
+    }
+    #banner .banner_text p.bottom {
+        font-size: 59px;
+    }
+    #tour .none img {
+        width: 300px;
+        height: 300px;
+    }
+    #tour .none .tour_bg {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #user_name {
+        width: 28%;
+        margin-right: 0px;
+    }
+    #user_msg {
+        width: 62.5%;
+        margin-top: 30px;
+    }
+    #contact .footer_top input{
+        margin-left: 6%;
+        border: none;
+        background: transparent;
+        height: 36px;
+        border-bottom: 1px solid #bbb;
+        font-size: 20px;
+        color: #bbb;
+    }
+    #contact .footer_bottom textarea{
+        width: 80%;
+        margin-left: 6%;
+        border: none;
+        background: transparent;
+        height: 36px;
+        border-bottom: 1px solid #bbb;
+        font-size: 20px;
+        color: #bbb;
+    }
+    #contact .footer_btn input{
+        width: 130px;
+        height: 50px;
+        font-size: 17px;
+        color: #efefef;
+        cursor: pointer;
+        background: #333;
+        margin: 45px 0 0 71%;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width: 984px) {
+  #banner .banner_text p.top {
+      font-size: 25px;
+  }
+  #banner .banner_text p.bottom {
+      font-size: 50px;
+  }
+  #banner a {
+    bottom: 26%;
+    left: 50%;
+    font-size: 1em;
+  }
+
+    #tour .click {
+        overflow-y: scroll;
+    }
+    #user_name {
+        width: 28%;
+        margin-right: 0px;
+    }
+    #user_msg {
+        width: 62.5%;
+        margin-top: 30px;
+    }
+    #contact .footer_btn input{
+        font-size: 20px;
+        margin: 20px 0 0 68%;
+    }
+    #contact p.copy {
+        bottom: 15%;
+    }
+    #contact .sns .icon {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #about #p1 {
+
+
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    #p1 strong {
+
+        font-size: 30px;
+        font-weight: 800;
+
+
+      }
+}
+
+
+@media screen and (max-width: 840px) {
+  #about, .about_bg {height: 300px; background-position: 50% 65%;}
+  #banner .banner_text p.top {
+      font-size: 18px;
+  }
+  #banner .banner_text p.bottom {
+      font-size: 35px;
+  }
+
+  #banner a {
+    bottom: 23%;
+    left: 50%;
+    font-size: 1em;
+  }
+    #tour .image {
+        float: none;
+    }
+    #header .fixed .nav ul li {
+        float: left;
+        padding-right: 50px;
+    }
+
+    #about #p1 {
+
+        padding: 5% 3% 0 3%;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    #p1 strong {
+
+        font-size: 25px;
+        font-weight: 700;
+
+
+      }
+  /*  .banner_inner{
+        height: 730px;
+    }*/
+    #tour .click .pic img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #user_name {
+        width: 28%;
+        margin-right: 0px;
+    }
+    #user_msg {
+        width: 62.5%;
+        margin-top: 30px;
+    }
+    #contact .footer_btn input{
+        font-size: 20px;
+        margin: 20px 0 0 65%;
+    }
+    #header .fixed .nav ul li {float: left; padding-right: 10%;}
+}
+
+
+@media screen and (max-width: 768px) {
+    #header .fixed .nav ul li a {
+        
+        font-size: 17px;
+    }
+
+    #banner a {
+      bottom: 28%;
+      left: 50%;
+
+    }
+    .banner_inner{
+        position: relative;
+        height: 20%;
+        margin: 0 auto;
+    }
+  / #banner .banner_pic {
+        opacity: .4;
+        background: url(../img/banner/banner_500px.jpg) no-repeat;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #banner .banner_text p.top {
+        font-size: 15px;
+    }
+    #banner .banner_text p.bottom {
+        font-size: 25px;
+    }
+
+
+    #contact p.copy {
+        bottom: 15%;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+    #contact .sns .icon {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+         float: right;
+    }
+}
+
+@media screen and (min-width: 626px) {
+    #header .fixed .nav {
+        display: block !important;
+    }
+
+    /* 모바일 메뉴를 사용하고 화면을 다시 넓혔을 때 메뉴가 안보이던 문제를 수정했습니다. */
+
+
+}
+
+
+@media screen and ( max-width: 626px) {
+    #header .fixed .nav {
+        opacity: .8;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        border: 3px solid #0c3483;
+        display: none;
+    }
+    #header .fixed .nav ul li {
+        width: 95%;
+        display: block;
+        border-bottom: 1px solid #0c3483;
+        float: none;
+        padding: 15px 0 10px 18px;
+    }
+    #header .fixed .nav ul li.last {
+        float: none;
+        padding: 15px 0 10px 18px;
+        border: none;
+    }
+    #header .fixed .nav ul li a {
+        font-size: 20px;
+        display: block;
+        /* 클릭 범위를 넓힌다. */
+        padding: 10px;
+    }
+    #header .fixed .nav ul li a:hover{
+      transition: all .5s;
+       color: #fff;
+       text-decoration: none;
+       background-color: rgba(0,0,0,0.6);
+    }
+
+
+
+    #banner a {
+      bottom: 16%;
+      left: 50%;
+          font-size: 0.6em;
+          border: 1px solid #000;
+        }
+
+/*    .banner_inner{
+        height: 730px;
+    }
+    #banner a {
+        position: absolute;
+        bottom: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3em;
+        padding: 7px;
+        text-decoration: none;
+    }*/
+
+  /*  #banner .banner_pic {
+        opacity: .4;
+        background: url(../img/banner/banner_360px.jpg) no-repeat;
+        width: 365px;
+        height: 365px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }*/
+
+
+
+    #tour .none img {
+        width: 300px;
+        height: 300px;
+    }
+    #tour .click .pic img {
+        padding: 0 0 40px 0;
+    }
+    #tour .click {
+        height: 620px;
+    }
+    #tour .click .title {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 70px 0 50px 0;
+    }
+    #tour .click p {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 17px;
+        padding: 0 40px 100px 40px;
+    }
+    #contact .footer_btn input{
+        width: 130px;
+        height: 50px;
+        font-size: 17px;
+        background: #333;
+        margin: 45px 0 0 56%;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+    #user_name {
+        width: 40%;
+        margin-right: 5px;
+    }
+    #user_email {
+        width: 40%;
+    }
+    #user_msg {
+        width: 88%;
+        margin-top: 30px;
+    }
+    .list_button {
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        background: url(../img/button/list_button.svg) no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    #contact .sns .icon {
+        width: 240px;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        float: right;
+    }
+    #banner .banner_text p.bottom {
+      margin-bottom: 1%;
+}
+#about #p1 {
+
+    padding: 10% 3% 0 3%;
+    font-size: 15px;
+}
+#p1 strong {
+
+    font-size: 18px;
+    font-weight: 800;
+
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  #p1 strong {
+
+      font-size: 17px;
+      font-weight: 200;
+
+    }
+  .about_bg #p1{
+
+      padding: 30% 5% 0 5%;
+      font-size: 15px;
+
+  }
+  #banner .banner_text p.top {
+      font-size: 13px;
+      top: 35px;
+  }
+  #banner .banner_text p.bottom {
+      font-size: 15px;
+
+  }
+
+
+
+    #tour .click .close_button {
+        background: url(../img/button/menu_close.svg) no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+#banner a {
+  bottom: 20%;
+  left: 50%;
+
+
+}
+
+
+
+
+}
+
+@media screen and (max-width: 320px) { /* 아이폰5/SE */
+/*    #banner .banner_pic {
+        opacity: .4;
+        background: url(../img/banner_305px.jpg) no-repeat;
+        width: 310px;
+        height: 310px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }*/
+
+  #about, .about_bg {height: 300px; background-position: -750px -300px;}
+    #tour .image {
+        width: 300px;
+        height: 300px;
+    }
+    #tour .image {
+        margin: 0;
+    }
+    #tour .click {
+        position: fixed;
+        left: 5%;
+        right: 12%;
+    }
+    #tour .click .close_button {
+      right: 11%
+    }
+    #contact p.copy {
+        bottom: 15%;
+        font-size: 12px;
+    }
+    #about #p1{
+
+        padding: 50% 5% 0 5%;
+        font-size: 15px;
+
+    }
+}

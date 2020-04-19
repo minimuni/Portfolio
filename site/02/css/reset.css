@@ -1,0 +1,105 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Nanum+Gothic:400,700,800&subset=korean,latin-ext');
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,
+sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,menu,nav,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-y: scroll;
+}
+body,table,th,td,input,select,option,textarea,button {
+    font-size: 15px;
+    font-family: 'Nanum Gothic', 'Julius Sans One', sans-serif;
+    color: #999;
+}
+fieldset,img {
+    border: 0 none;
+}
+img {
+    vertical-align: top;
+}
+dl,ul,ol,menu,li {
+    list-style: none;
+}
+input,select,textarea,button {
+    border-radius: 0;
+    vertical-align: middle;
+}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup {
+    font-style: normal;
+    font-weight: normal;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content: '';
+    content: none;
+}
+input::-ms-clear {
+    display: none;
+}
+button { 
+    border: 0 none; 
+    background-color: transparent;
+    cursor: pointer;
+}
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0; 
+    border: 0;
+}
+hr {
+    display: none;
+}
+a { 
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.blind,legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;    
+}
+.skip a {
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    background-color: midnightblue;
+    color: #efefef;
+    text-align: center;
+    line-height: 2.4em;
+}
+.skip a:hover,
+.skip a:active,
+.skip a:focus {
+    top: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* common */
+
+
+/* scrollbar */
+.scroll {cursor: pointer}
+.scroll::-webkit-scrollbar {width: 10px}
+.scroll::-webkit-scrollbar-track {background: #283f5e}
+.scroll::-webkit-scrollbar-thumb {background: #335078}
+.scroll::-webkit-scrollbar-thumb:hover {background: #42679a}
