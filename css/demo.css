@@ -8,7 +8,9 @@
 	font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; 
 	font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; 
 	font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal;
+
 }
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
 
 *,
 *::after,
@@ -17,20 +19,24 @@
 	box-sizing: border-box;
 	
 }
-
+::-webkit-scrollbar {
+	display: none;
+  }
 body {
+	
+	-ms-overflow-style: none;
 	--text-color: #fff;
-	--background-color: #363dc2;
-	--background-color-2: #282faf;
-	--background-color-3: #202692;
-	--background-color-4: #3e2685;
+	--background-color: #6768ab;
+	--background-color-2: #8cbb62;
+	--background-color-3: #a1c9c9;
+	--background-color-4: #e2c0bf;
 	--link-color: #03b9f1;
 	--link-hover-color: #fff;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
 	color: #fff;
 	color: var(--text-color);
-	background-color: #363dc2;
+	background-color: #769e51;
 	background-color: var(--background-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -206,7 +212,35 @@ a:focus {
 .morph2{
 	position: relative;
     height: 67%;
-    fill: #3e2685;
+    fill: #6768ab;
+    flex: none;
+    top: 13%;
+    left: 45%;
+    transform: rotate(64deg);
+}
+
+.morph3{
+	position: relative;
+    height: 67%;
+    fill: #8cbb62;
+    flex: none;
+    top: 13%;
+    left: 45%;
+    transform: rotate(64deg);
+}
+.morph4{
+	position: relative;
+    height: 67%;
+    fill: #a1c9c9;
+    flex: none;
+    top: 13%;
+    left: 45%;
+    transform: rotate(64deg);
+}
+.morph5{
+	position: relative;
+    height: 67%;
+    fill: #e2c0bf;
     flex: none;
     top: 13%;
     left: 45%;
@@ -229,8 +263,9 @@ a:focus {
 	display: grid;
 }
 
+
 .content--fixed {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -293,7 +328,7 @@ a:focus {
 }
 
 .content__author {
-	text-shadow: 1px 1px 8px rgba(0,0,0,.3);
+	text-shadow: 1px 1px 8px rgba(0,0,0,.8);
 	grid-area: author;
 	margin: 0;
 	-webkit-writing-mode: vertical-lr;
@@ -499,11 +534,13 @@ a:focus {
 
 /* Demo themes */
 .demo-2 {
-	--background-color: #e7e7e7;
-	--background-color-2: #342560;
-	--background-color-3: #553e9a;
+	--background-color: #f9f9f9;
+	--background-color-2: #8cbb62;
+	--background-color-3: #a1c9c9;
+	--background-color-4: #e2c0bf;
+	--background-color-5: #6768ab;
 	--text-color: #fff;
-	--link-color: #f9ed8a;
+	--link-color: hsl(54, 100%, 77%);
 	--link-hover-color: #fff;
 }
 
@@ -580,6 +617,6 @@ a:focus {
 
 @media (min-width:1024px){
 	.codrops-header__title{
-		color: #3e2685;
+		color: var(--background-color-5);
 	}
 }

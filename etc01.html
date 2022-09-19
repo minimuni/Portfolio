@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>최민희의 포트폴리오</title>
+  <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+  <meta name="keywords" content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+  <link href="css/mystyle.css" rel="stylesheet" />
+  <link href="css/circlechart.css" rel="stylesheet" />
+ 
+</head>
+
+<body class="demo-2 sidebar-collapse" style="margin-top: 130px;">
+  <div class="morph-wrap">
+    <svg class="morph2" width="1400" height="770" viewBox="0 0 1400 770">
+      <path
+        d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />
+    </svg>
+  </div>
+  <div class="content content--fixed" style="position: absolute;">
+    <svg class="hidden">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+      </symbol>
+      <symbol id="icon-drop" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <path stroke-miterlimit="10"
+          d="M22.422 9.452l-.001-.001-7.458-7.457a1.665 1.665 0 00-1.189-.494c-.45 0-.873.175-1.191.493L5.129 9.446l-.007.009a1.685 1.685 0 00.003 2.377 1.672 1.672 0 001.168.493h.297v5.487c0 1.087.884 1.97 1.969 1.97h2.918a.535.535 0 00.536-.535v-4.303a.9.9 0 01.899-.899h1.721a.9.9 0 01.899.899v4.303c0 .296.24.535.535.535h2.918c1.087 0 1.97-.883 1.97-1.97v-5.487h.276a1.685 1.685 0 001.191-2.873zm-.758 1.622a.604.604 0 01-.432.179h-.813a.535.535 0 00-.535.535v6.023a.899.899 0 01-.898.898h-2.382v-3.767a1.973 1.973 0 00-1.97-1.971h-1.721c-1.086 0-1.97.885-1.97 1.971v3.767H8.561a.9.9 0 01-.898-.898v-6.023a.535.535 0 00-.536-.535H6.33l-.025-.002a.6.6 0 01-.422-.178.613.613 0 010-.865h.001l7.457-7.458a.61.61 0 01.865 0l7.457 7.456.002.004a.612.612 0 01-.001.864z" />
+      </symbol>
+      <symbol id="shape-demo" viewBox="0 0 200 100">
+        <title>shape demo</title>
+        <path
+          d="M 6.144,74.1 C 20.4,107.4 70.13,94.33 94.22,95.74 121.3,97.41 130.8,101.1 154.7,99.38 178.6,97.72 201.9,78.95 199.4,46.86 197.1,14.96 174.9,4.781 161.4,1.827 147.9,-1.128 119.8,8.284 105.6,8.766 85.34,9.449 81.91,7.628 51.08,2.334 17.26,-3.482 -8.105,40.84 6.144,74.1 Z" />
+      </symbol>
+    </svg>
+    <header class="codrops-header">
+      <div class="codrops-links">
+        <svg class="decoshape" style="fill: #3e2685;" viewBox="0 0 200 100" width="100%" height="100%"
+          preserveAspectRatio="none">
+          <path
+            d="M 10.45,74.41 C 39.4,110.8 72.59,67.27 95.98,68.68 122.3,70.35 131.5,101.4 154.7,99.69 177.9,98.03 200.5,79.26 198.1,47.17 195.9,15.27 174.6,-0.3279 151.8,0.9941 128.6,2.581 126,16.86 107,22.76 88.26,28.67 88.87,12.36 60.37,1.787 31.79,-8.877 -18.61,37.92 10.45,74.41 Z" />
+        </svg>
+        <a class="codrops-icon codrops-icon--prev" href="./index.html"><svg class="icon icon--arrow">
+            <use xlink:href="#icon-arrow"></use>
+          </svg></a>
+        <a class="codrops-icon codrops-icon--drop" href="./index.html"><svg class="icon icon--drop">
+            <use xlink:href="#icon-drop"></use>
+          </svg></a>
+      </div>
+      <h1 class="codrops-header__title title-sub">최민희의 포트폴리오</h1>
+    </header>
+
+    <a class="pater" href="http://synd.co/2pHxJny">
+      <p class="pater__desc">Embed contracts and agreements into your site or app with a few lines of code.</p>
+    </a>
+    <div class="deco deco--title">2020 minimuni portfoilo</div>
+  </div>
+
+  <div class="main main-raised">
+    
+    <div class="wrapper">
+    <div class="container">
+      <ul id="filters" class="clearfix">
+      <li><span class="filter active" data-filter=".print, .card, .icons, .banner, .web">All</span></li>
+      <li><span class="filter" data-filter=".print">print</span></li>
+      <li><span class="filter" data-filter=".card">Card</span></li>
+      <li><span class="filter" data-filter=".icons">Icons</span></li>
+      <li><span class="filter" data-filter=".banner">banner</span></li>
+      <li><span class="filter" data-filter=".web">Web</span></li>
+      </ul>
+      
+      <div id="portfoliolist">
+        <div class="portfolio print btn" data-cat="print">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_00.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">감정카드</a> 
+                <span class="text-category">한국콘텐츠미디어</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal">
+ 
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="./img/06_00.jpg" alt="" />
+            </div>
+          </div>
+
+
+        <div class="portfolio print btn" data-cat="print">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_01.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">나 전달법</a> 
+                <span class="text-category">한국콘텐츠미디어</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_01.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio print btn" data-cat="print">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_02.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">VIP 설 와인 카다로그</a> 
+                <span class="text-category">한진몰</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_02.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio card btn" data-cat="card">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_03.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">서울랜드 임직원할인</a> 
+                <span class="text-category">한진몰</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_03.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio banner btn" data-cat="banner">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_04.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">제주퓨어워터</a> 
+                <span class="text-category">한진몰</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_04.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio web btn" data-cat="web">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_05.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">제주퓨어워터</a> 
+                <span class="text-category">한진몰</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_05.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio card btn" data-cat="card">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_06.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">2021새해맞이</a> 
+                <span class="text-category">이모틱박스</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_06.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio banner btn" data-cat="banner">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_07.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">오픈그래프 이미지</a> 
+                <span class="text-category">이모틱박스</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_07.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio card btn" data-cat="card">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_08.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">빼빼로데이</a> 
+                <span class="text-category">이모틱박스</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_08.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio print btn" data-cat="print">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_09.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">설 x배너</a> 
+                <span class="text-category">한진몰</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_09.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio banner btn" data-cat="banner">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_10.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">홍보배너</a> 
+                <span class="text-category">이모틱박스</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_10.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div class="portfolio print btn" data-cat="print">
+          <div class="portfolio-wrapper">
+            <img src="./img/6_11.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">홍보 전단지</a> 
+                <span class="text-category">알스영어</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+ 
+          <!--  Modal의 내용 -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/06_11.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    
+
+  </div>
+
+  <!--   Core JS Files   -->
+ 
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+  <script>
+   $("#filters li>span").click(function () {
+  $("#filters li>span").removeClass("active");
+  $(this).addClass("active");
+
+  var selectedFilter = $(this).data("filter");
+  $("#portfoliolist").fadeTo(100, 0);
+
+  $(".portfolio").fadeOut().css("transform", "scale(0)");
+
+  setTimeout(function () {
+    $(selectedFilter).fadeIn(100).css("transform", "scale(1)");
+    $("#portfoliolist").fadeTo(300, 1);
+  }, 300);
+});
+
+   </script>
+
+
+<script>
+       // Modal을 가져옵니다.
+var modals = document.getElementsByClassName("modal");
+// Modal을 띄우는 클래스 이름을 가져옵니다.
+var btns = document.getElementsByClassName("btn");
+// Modal을 닫는 close 클래스를 가져옵니다.
+var spanes = document.getElementsByClassName("close");
+var funcs = [];
+ 
+// Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+function Modal(num) {
+  return function() {
+    // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+    btns[num].onclick =  function() {
+        modals[num].style.display = "block";
+        console.log(num);
+    };
+ 
+    // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+    spanes[num].onclick = function() {
+        modals[num].style.display = "none";
+    };
+  };
+}
+ 
+// 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+for(var i = 0; i < btns.length; i++) {
+  funcs[i] = Modal(i);
+}
+ 
+// 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+for(var j = 0; j < btns.length; j++) {
+  funcs[j]();
+}
+ 
+// Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+window.onclick = function(event) {
+  if (event.target.div.className == "modal") {
+      event.target.style.display == "none";
+  }
+};
+
+window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none"
+    }
+}) //왜안돼ㅣ시비라라라라라라라라
+</script>
+
+<script>
+  /* 외부영역 클릭시 팝업 닫기 */
+$(document).mouseup(function (e){
+	if($(".modal").has(e.target).length === 0){
+		$(".modal").hide();
+	}
+});
+
+$(document).keydown(function(e){
+	//keyCode 구 브라우저, which 현재 브라우저
+    var code = e.keyCode || e.which;
+ 
+    if (code == 27) { // 27은 ESC 키번호
+        $('.modal').hide();
+    }
+});
+</script>
+
+
+<!--<script>
+  (function(){
+var $content = $('.modal_info').detach();
+
+$('.open_button').on('click', function(e){
+ modal.open({
+   content: $content
+       
+ });
+ $content.addClass('modal_content');
+ $('.modal, .modal_overlay').addClass('display');
+ $('.open_button').addClass('load');
+});
+}());
+var modal = (function(){
+
+var $close = $('<button role="button" class="modal_close" title="Close"><span></span></button>');
+var $content = $('<div class="modal_content"/>');
+var $modal = $('<div class="modal"/>');
+var $window = $(window);
+
+$modal.append($content, $close);
+
+$close.on('click', function(e){
+$('.modal, .modal_overlay').addClass('conceal');
+$('.modal, .modal_overlay').removeClass('display');
+$('.open_button').removeClass('load');
+e.preventDefault();
+modal.close();
+});
+
+return {
+center: function(){
+ var top = Math.max($window.height() - $modal.outerHeight(), 0) / 2;
+ var left = Math.max($window.width() - $modal.outerWidth(), 0) / 2;
+ $modal.css({
+   top: top + $window.scrollTop(),
+   left: left + $window.scrollLeft(),
+ });
+},
+open: function(settings){
+ $content.empty().append(settings.content);
+
+ $modal.css({
+   width: settings.width || 'auto',
+   height: settings.height || 'auto'
+ }).appendTo('body');
+
+ modal.center();
+ $(window).on('resize', modal.center);
+},
+close: function(){
+ $content.empty();
+ $modal.detach();
+ $(window).off('resize', modal.center);
+}
+};
+}());
+
+</script>
+<script>
+   $(settings.objModalCloseBtn).bind("click", function () {
+     $(".modal").fadeOut();
+ });
+
+</script>-->
+
+
+
+
+
+
+<style>
+      .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+           /* margin: 15% auto;  15% from the top and centered */
+            padding: 20px;
+            box-shadow: 7px 8px 55px 1px rgb(0 0 0 / 70%);
+            /*width: 45%;  Could be more or less, depending on screen size */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .modal-content img{
+
+            width: 100%;
+        }
+        /* The Close Button */
+        .close {
+            color: #fff;
+            float: right;
+            margin-top: -80px;
+            margin-right: -25px;
+            font-size: 48px;
+            font-weight: 100;
+            font-family: emoji;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+ 
+        @media only screen and (max-width: 1280px){
+
+          .modal-content{width: 90%;}
+          
+          
+        }
+
+
+
+
+/*.modal {
+opacity: 0;
+padding: 50px;
+position: absolute;
+z-index: 1100;
+-webkit-transition: opacity 600ms linear 600ms;
+-moz-transition: opacity 600ms linear 600ms;
+-ms-transition: opacity 600ms linear 600ms;
+-o-transition: opacity 600ms linear 600ms;
+transition: opacity 600ms linear 600ms;
+}
+
+.modal_info {
+background: #FCF9F2;
+padding: 50px 100px;
+text-align: center;
+}
+
+.modal_overlay {
+background: rgba(0, 0, 0, 0.5);
+bottom: 0;
+left: 0;
+opacity: 0;
+overflow: auto;
+position: fixed;
+right: 0;
+top: 0;
+visibility: hidden;
+z-index: 900;
+-webkit-transition: opacity 200ms linear;
+-moz-transition: opacity 200ms linear;
+-ms-transition: opacity 200ms linear;
+-o-transition: opacity 200ms linear;
+transition: opacity 200ms linear;
+}
+
+.display {
+opacity: 1;
+visibility: visible;
+}
+
+.conceal {
+visibility: visible;
+}
+
+.btn_container {
+height: 100%;
+text-align: center;
+}
+
+.btn_container:before {
+content: '';
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+width: 0;
+}
+
+.open_button {
+background: #363D4E;
+display: inline-block;
+position: relative;
+vertical-align: middle;
+whitespace: normal;
+z-index: 1000;
+-webkit-transition: opacity 100ms linear;
+-moz-transition: opacity 100ms linear;
+-ms-transition: opacity 100ms linear;
+-o-transition: opacity 100ms linear;
+transition: opacity 100ms linear;
+}
+
+.open_button {
+color: #FFFFFF;
+letter-spacing: 2px;
+line-height: 66px;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.open_button:hover {
+background: #3E465A;
+}
+
+.open_button.load {
+opacity: 0.5;
+}
+
+button.modal_close {
+background: #363D4E;
+border: none;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+color: #FFFFFF;
+cursor: pointer;
+outline: none;
+width: 52px;
+height: 52px;
+position: absolute;
+right: 30px;
+top: 30px;
+-webkit-transition: -webkit-transform 600ms;
+-moz-transition: -moz-transform 600ms;
+-ms-transition: -ms-transform 600ms;
+-o-transition: -o-transform 600ms;
+transition: transform 600ms;
+}
+
+button.modal_close:hover {
+background: #3E465A;
+-webkit-transform: rotate(360deg) scale(1.10);
+-moz-transform: rotate(360deg) scale(1.10);
+-ms-transform: rotate(360deg) scale(1.10);
+-o-transform: rotate(360deg) scale(1.10);
+transform: rotate(360deg) scale(1.10);
+-webkit-transition: -webkit-transform 600ms;
+-moz-transition: -moz-transform 600ms;
+-ms-transition: -ms-transform 600ms;
+-o-transition: -o-transform 600ms;
+transition: transform 600ms;
+}
+
+/*button.modal_close span, span:before, span:after {
+background: #FFFFFF;
+content: '';
+cursor: pointer;
+display: block;
+height: 2px;
+position: absolute;
+width: 20px;
+}  
+button.modal_close span::before{
+background: #FFFFFF;
+ content: '';
+ cursor: pointer;
+ display: block;
+ height: 2px;
+ position: absolute;
+ width: 20px;
+}
+
+button.modal_close span::after{
+background: #FFFFFF;
+ content: '';
+ cursor: pointer;
+ display: block;
+ height: 2px;
+ position: absolute;
+ width: 20px;
+}
+
+
+button.modal_close span:first-child {
+background: none;
+/*bottom: 0;
+left: 16px;
+margin: auto;
+position: absolute;
+/*right: 0;
+top: 25px;
+}
+
+button.modal_close span:before {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+button.modal_close span:after {
+-webkit-transform: translateY(-2px) rotate(-45deg);
+-moz-transform: translateY(-2px) rotate(-45deg);
+-ms-transform: translateY(-2px) rotate(-45deg);
+-o-transform: translateY(-2px) rotate(-45deg);
+transform: translateY(-2px) rotate(-45deg);
+top: 2px;
+}
+
+*/
+
+
+
+
+.container { 
+	position: relative; 
+	width: 1200px; 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: rgb(103, 104, 171);
+		color:#fff;
+	}
+ 
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+}
+
+
+
+</style>
+
+</body>
+
+
+
+</html>
