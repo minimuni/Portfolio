@@ -15,7 +15,53 @@
   <link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
   <link href="css/mystyle.css" rel="stylesheet" />
   <link href="css/circlechart.css" rel="stylesheet" />
- 
+  <style>
+    /* Hide the images by default */
+
+
+    /* Next & previous buttons */
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 48%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: 300;
+      font-size: 45px;
+      text-shadow: 1px 0px 7px black;
+      user-select: none;
+
+    }
+
+    .prev {
+      left: 25%;
+    }
+
+    .next {
+      right: 25%;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+
+    .portfolio-wrapper {
+      max-height: 207px;
+      overflow: hidden;
+      position: relative !important;
+      background: #f9f9f9;
+      cursor: pointer;
+    }
+  </style>
+
+
 </head>
 
 <body class="demo-2 sidebar-collapse" style="margin-top: 130px;">
@@ -66,302 +112,676 @@
   </div>
 
   <div class="main main-raised">
-    
+
     <div class="wrapper">
-    <div class="container">
-      <ul id="filters" class="clearfix">
-      <li><span class="filter active" data-filter=".print, .card, .banner, .web">All</span></li>
-      <li><span class="filter" data-filter=".print">print</span></li>
-      <li><span class="filter" data-filter=".card">Card</span></li>
-      <li><span class="filter" data-filter=".banner">banner</span></li>
-      <li><span class="filter" data-filter=".web">Web</span></li>
-      </ul>
-      
-      <div id="portfoliolist">
-        <div class="portfolio print btn" data-cat="print">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_00.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">감정카드</a> 
-                <span class="text-category">한국콘텐츠미디어</span>
+      <div class="container">
+        <ul id="filters" class="clearfix">
+          <li><span class="filter active" data-filter=".print, .card, .banner, .web">All</span></li>
+          <li><span class="filter" data-filter=".print">Print</span></li>
+          <li><span class="filter" data-filter=".card">Card</span></li>
+          <li><span class="filter" data-filter=".banner">Banner</span></li>
+          <li><span class="filter" data-filter=".web">Web</span></li>
+          <li><span class="filter" data-filter=".product">Product</span></li>
+        </ul>
+
+        <div id="portfoliolist">
+
+
+          <div class="portfolio web btn" data-cat="web" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-05-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공x몰스킨 다이어리 랜딩</a>
+                  <span class="text-category">KAL스토어</span>
+                </div>
+                <div class="label-bg"> </div>
               </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-        
-        <div class="modal">
- 
+
+          <div class="modal">
+
             <!--  Modal의 내용 -->
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="./img/06_00.jpg" alt="" />
+              <span class="close">&times;</span>
+              <img src="./img/etc-05.png" alt="" />
             </div>
           </div>
 
 
-        <div class="portfolio print btn" data-cat="print">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_01.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">나 전달법</a> 
-                <span class="text-category">한국콘텐츠미디어</span>
+          <div class="portfolio web btn" data-cat="web" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-15-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공x몰스킨 다이어리 랜딩 mobile</a>
+                  <span class="text-category">KAL스토어</span>
+                </div>
+                <div class="label-bg"> </div>
               </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-        
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-15.png" alt="" />
+            </div>
+          </div>
+
+
+          <div class="portfolio card btn" data-cat="card"  onclick="openModal('modal1', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc02-01-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공 굿즈 SNS 카드뉴스</a>
+                  <span class="text-category">싸이버스카이</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal1" class="modal slideshow-container" data-slide-index="1">
+            <!--  Modal의 내용 -->
+            <div class="modal-content mySlides fade">
+              <span class="close">&times;</span>
+              <img src="./img/etc02-01.png"  onclick="openModal('modal1', 1);"> />
+            </div>
+            <div class="modal-content mySlides fade">
+
+              <img src="./img/etc02-02.png"  onclick="openModal('modal1', 2);"> />
+            </div>
+            <div class="modal-content mySlides fade">
+
+              <img src="./img/etc02-03.png"  onclick="openModal('modal1', 3);"> />
+            </div>
+            <div class="modal-content mySlides fade">
+
+              <img src="./img/etc02-04.png" onclick="openModal('modal1', 4);"> />
+            </div>
+            <a class="prev"onclick="plusSlides(-1, 'modal1')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'modal1')">&#10095;</a>
+          </div>
+
+
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-06-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">제작 일러스트 배너</a>
+                  <span class="text-category">KAL스토어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-06.png" alt="" />
+            </div>
+          </div>
+
+
+
+          
+          <div class="portfolio product btn" data-cat="product" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-07-1-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">리유저블 텀블러 시안</a>
+                  <span class="text-category">한진 제주퓨어워터</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-07-1.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-03-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">리유저블 이벤트 배너</a>
+                  <span class="text-category">한진 제주퓨어워터</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-03.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio web btn" data-cat="web" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-07-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">리유저블 이벤트 랜딩</a>
+                  <span class="text-category">한진 제주퓨어워터</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-07.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-16-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공x스타벅스 콜라보 배너</a>
+                  <span class="text-category">KAL스토어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-16.png" alt="" />
+            </div>
+          </div>
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-17.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공x스타벅스 콜라보 mobile</a>
+                  <span class="text-category">KAL스토어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-17-2.png" alt="" />
+            </div>
+          </div>
+
+
+
+
+          <div class="portfolio product btn" data-cat="product" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-01-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공 굿즈 텐트 시안</a>
+                  <span class="text-category">이스카이숍</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-01-2.png" alt="" />
+            </div>
+          </div>
+
+
+          <div class="portfolio print btn" data-cat="print"onclick="openModal('modal2', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-14.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">레자미와인 구독와인 포스터</a>
+                  <span class="text-category">싸이버스카이</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal2" class="modal slideshow-container"data-slide-index="1">
+            <!--  Modal의 내용 -->
+            <div class="modal-content mySlides fade">
+              <span class="close">&times;</span>
+              <img src="./img/etc-14-1.png" onclick="openModal('modal2', 1);">
+            </div>
+            <div class="modal-content mySlides fade">
+
+              <img src="./img/etc-14-2.png" onclick="openModal('modal2', 2);">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'modal2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(-1, 'modal2')">&#10095;</a>
+          </div>
+
+
+
+          <div class="portfolio card btn" data-cat="card" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-08-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">한진 제주퓨어워터 이벤트 </a>
+                  <span class="text-category">한진 제주퓨어워터 이벤트</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-08.png" alt="" />
+            </div>
+          </div>
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-09-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">블랙프라이데이 이벤트 배너</a>
+                  <span class="text-category">이스카이숍</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-09.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-12-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">크리스마스 할인 행사</a>
+                  <span class="text-category">한진몰</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-12.png" alt="" />
+            </div>
+          </div>
+
+          
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-11-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">sns 팔로우 이벤트</a>
+                  <span class="text-category">싸이버스카이</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-11.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio product btn" data-cat="product" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/etc-10-2.png" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">대한항공x위글위글 콜라보 시안</a>
+                  <span class="text-category">이스카이숍</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/etc-10.png" alt="" />
+            </div>
+          </div>
+
+
+
+          <div class="portfolio print btn" data-cat="print" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_00.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">감정카드</a>
+                  <span class="text-category">한국콘텐츠미디어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+            <!--  Modal의 내용 -->
+            <div class="modal-content mySlides fade">
+              <span class="close">&times;</span>
+              <img src="./img/06_00.jpg" alt="" />
+            </div>
+          </div>
+
+
+          <div class="portfolio print btn" data-cat="print" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_01.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">나 전달법</a>
+                  <span class="text-category">한국콘텐츠미디어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_01.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio print btn" data-cat="print">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_02.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">VIP 설 와인 카다로그</a> 
-                <span class="text-category">한진몰</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio print btn" data-cat="print" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_02.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">VIP 설 와인 카다로그</a>
+                  <span class="text-category">한진몰</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_02.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio web btn" data-cat="web">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_03.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">서울랜드 임직원할인</a> 
-                <span class="text-category">한진몰</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio web btn" data-cat="web" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_03.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">서울랜드 임직원할인</a>
+                  <span class="text-category">한진몰</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_03.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio banner btn" data-cat="banner">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_04.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">제주퓨어워터</a> 
-                <span class="text-category">한진몰</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_04.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">제주퓨어워터</a>
+                  <span class="text-category">한진몰</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_04.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio web btn" data-cat="web">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_05.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">제주퓨어워터</a> 
-                <span class="text-category">한진몰</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <img src="./img/06_05.jpg" alt="" />
-          </div>
-        </div>
 
 
-        <div class="portfolio card btn" data-cat="card">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_06.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">2021새해맞이</a> 
-                <span class="text-category">이모틱박스</span>
+
+          <div class="portfolio card btn" data-cat="card" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_06.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">2021새해맞이</a>
+                  <span class="text-category">이모틱박스</span>
+                </div>
+                <div class="label-bg"> </div>
               </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_06.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio banner btn" data-cat="banner">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_07.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">오픈그래프 이미지</a> 
-                <span class="text-category">이모틱박스</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_07.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">오픈그래프 이미지</a>
+                  <span class="text-category">이모틱박스</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_07.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio card btn" data-cat="card">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_08.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">빼빼로데이</a> 
-                <span class="text-category">이모틱박스</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio card btn" data-cat="card" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_08.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">빼빼로데이</a>
+                  <span class="text-category">이모틱박스</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_08.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio print btn" data-cat="print">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_09.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">설 x배너</a> 
-                <span class="text-category">한진몰</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
-                
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+
+          <div class="portfolio print btn" data-cat="print" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_09.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">설 x배너</a>
+                  <span class="text-category">한진몰</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_09.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio banner btn" data-cat="banner">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_10.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">홍보배너</a> 
-                <span class="text-category">이모틱박스</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
 
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+          <div class="portfolio banner btn" data-cat="banner" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_10.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">홍보배너</a>
+                  <span class="text-category">이모틱박스</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_10.jpg" alt="" />
-          </div>
-        </div>
-
-
-        <div class="portfolio print btn" data-cat="print">
-          <div class="portfolio-wrapper">
-            <img src="./img/6_11.jpg" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">홍보 전단지</a> 
-                <span class="text-category">알스영어</span>
-              </div>
-              <div class="label-bg"> </div>
             </div>
           </div>
-        </div>
 
-        <div class="modal">
- 
-          <!--  Modal의 내용 -->
-          <div class="modal-content">
+
+          <div class="portfolio print btn" data-cat="print" onclick="openModal('modal01', 1)">
+            <div class="portfolio-wrapper">
+              <img src="./img/6_11.jpg" alt="" />
+              <div class="label">
+                <div class="label-text">
+                  <a class="text-title">홍보 전단지</a>
+                  <span class="text-category">알스영어</span>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal">
+
+            <!--  Modal의 내용 -->
+            <div class="modal-content">
               <span class="close">&times;</span>
               <img src="./img/06_11.jpg" alt="" />
+            </div>
           </div>
+
+
+
         </div>
-      </div>
 
       </div>
     </div>
-    
+
 
   </div>
 
   <!--   Core JS Files   -->
- 
+
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 
 
@@ -371,217 +791,354 @@
 
 
   <script>
-   $("#filters li>span").click(function () {
-  $("#filters li>span").removeClass("active");
-  $(this).addClass("active");
+    $("#filters li>span").click(function () {
+      $("#filters li>span").removeClass("active");
+      $(this).addClass("active");
 
-  var selectedFilter = $(this).data("filter");
-  $("#portfoliolist").fadeTo(100, 0);
+      var selectedFilter = $(this).data("filter");
+      $("#portfoliolist").fadeTo(100, 0);
 
-  $(".portfolio").fadeOut().css("transform", "scale(0)");
+      $(".portfolio").fadeOut().css("transform", "scale(0)");
 
-  setTimeout(function () {
-    $(selectedFilter).fadeIn(100).css("transform", "scale(1)");
-    $("#portfoliolist").fadeTo(300, 1);
-  }, 300);
-});
+      setTimeout(function () {
+        $(selectedFilter).fadeIn(100).css("transform", "scale(1)");
+        $("#portfoliolist").fadeTo(300, 1);
+      }, 300);
+    });
 
-   </script>
+  </script>
 
+  <script>
+    /* 외부영역 클릭시 팝업 닫기 */
+    $(document).mouseup(function (e) {
+      if ($(".modal").has(e.target).length === 0) {
+        $(".modal").hide();
+      }
+    });
 
-<script>
-       // Modal을 가져옵니다.
-var modals = document.getElementsByClassName("modal");
-// Modal을 띄우는 클래스 이름을 가져옵니다.
-var btns = document.getElementsByClassName("btn");
-// Modal을 닫는 close 클래스를 가져옵니다.
-var spanes = document.getElementsByClassName("close");
-var funcs = [];
- 
-// Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
-function Modal(num) {
-  return function() {
-    // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
-    btns[num].onclick =  function() {
-        modals[num].style.display = "block";
-        console.log(num);
-    };
- 
-    // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
-    spanes[num].onclick = function() {
-        modals[num].style.display = "none";
-    };
-  };
-}
- 
-// 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
-for(var i = 0; i < btns.length; i++) {
-  funcs[i] = Modal(i);
-}
- 
-// 원하는 Modal 수만큼 funcs 함수를 호출합니다.
-for(var j = 0; j < btns.length; j++) {
-  funcs[j]();
-}
- 
-// Modal 영역 밖을 클릭하면 Modal을 닫습니다.
-window.onclick = function(event) {
-  if (event.target.div.className == "modal") {
-      event.target.style.display == "none";
-  }
-};
+    $(document).keydown(function (e) {
+      //keyCode 구 브라우저, which 현재 브라우저
+      var code = e.keyCode || e.which;
 
-window.addEventListener("keyup", e => {
-    if(modal.style.display === "flex" && e.key === "Escape") {
-        modal.style.display = "none"
-    }
-}) //왜안돼ㅣ시비라라라라라라라라
-</script>
-
-<script>
-  /* 외부영역 클릭시 팝업 닫기 */
-$(document).mouseup(function (e){
-	if($(".modal").has(e.target).length === 0){
-		$(".modal").hide();
-	}
-});
-
-$(document).keydown(function(e){
-	//keyCode 구 브라우저, which 현재 브라우저
-    var code = e.keyCode || e.which;
- 
-    if (code == 27) { // 27은 ESC 키번호
+      if (code == 27) { // 27은 ESC 키번호
         $('.modal').hide();
+      }
+    });
+  </script>
+
+<script>
+  // Modal을 가져옵니다.
+  var modals = document.getElementsByClassName("modal");
+  // Modal을 띄우는 클래스 이름을 가져옵니다.
+  var btns = document.querySelectorAll(".portfolio.btn");
+  // Modal을 닫는 close 클래스를 가져옵니다.
+  var spanes = document.querySelectorAll(".modal .close");
+  var funcs = [];
+
+  // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+  function Modal(num) {
+      return function () {
+          // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+          btns[num].onclick = function () {
+              if (modals[num].classList.contains("slideshow-container")) {
+                  // 슬라이드 모달인 경우 슬라이드 인덱스를 전달하여 오픈
+                  openModal(modals[num].id, 1);
+              } else {
+                  // 일반 모달인 경우 그냥 열기
+                  modals[num].style.display = "block";
+              }
+          };
+
+          // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+          spanes[num].onclick = function () {
+              modals[num].style.display = "none";
+          };
+      };
+  }
+
+  // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+  for (var i = 0; i < btns.length; i++) {
+      funcs[i] = Modal(i);
+  }
+
+  // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+  for (var j = 0; j < btns.length; j++) {
+      funcs[j]();
+  }
+
+  // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+  window.onclick = function (event) {
+      // 모달 바깥 영역을 클릭했을 때
+      if (event.target.classList.contains("modal")) {
+          event.target.style.display = "none";
+      }
+  };
+
+  // ESC 키를 눌렀을 때 모달을 닫습니다.
+  window.addEventListener("keyup", function (e) {
+      if (e.key === "Escape") {
+          for (var k = 0; k < modals.length; k++) {
+              modals[k].style.display = "none";
+          }
+      }
+  });
+</script>
+
+
+<script>
+  let slideIndex = 1; // 초기 슬라이드 인덱스를 1로 설정
+  showSlides(slideIndex);
+
+  function openModal(modalId, startIndex) {
+    document.getElementById(modalId).style.display = "block";
+    // 슬라이드 모달을 열 때 슬라이드 인덱스를 항상 1로 초기화합니다.
+    document.getElementById(modalId).setAttribute("data-slide-index", 1);
+    // 슬라이드를 보여주는 함수를 호출하여 첫 번째 슬라이드를 보여줍니다.
+    showSlides(1, modalId);
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+
+
+  }
+
+  function plusSlides(n, modalId) {
+    let slideIndex = parseInt(document.getElementById(modalId).getAttribute("data-slide-index"));
+    let newIndex = slideIndex + n;
+    showSlides(newIndex, modalId);
+  }
+
+  function currentSlide(n, modalId) {
+    document.getElementById(modalId).setAttribute("data-slide-index", n);
+    showSlides(n, modalId);
+  }
+
+  function showSlides(n, modalId) {
+    let modal = document.getElementById(modalId);
+    let slides = modal.getElementsByClassName("mySlides");
+    let slideIndex = 1;
+
+    if (n > slides.length) { slideIndex = 1 }
+    else if (n < 0) { slideIndex = slides.length }
+    else { slideIndex = n }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      slides[i].style.boxShadow = "none";
     }
-});
+
+    slides[slideIndex - 1].style.display = "block";
+    modal.setAttribute("data-slide-index", slideIndex);
+  }
 </script>
 
 
 
-<style>
-      .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-           /* margin: 15% auto;  15% from the top and centered */
-            padding: 20px;
-            box-shadow: 7px 8px 55px 1px rgb(0 0 0 / 70%);
-            /*width: 45%;  Could be more or less, depending on screen size */
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .modal-content img{
+<script>
+function showSlides(n, modalId) {
+    let modal = document.getElementById(modalId);
+    let slides = modal.getElementsByClassName("mySlides");
 
-            width: 100%;
-        }
-        /* The Close Button */
-        .close {
-            color: #fff;
-            float: right;
-            margin-top: -80px;
-            margin-right: -25px;
-            font-size: 48px;
-            font-weight: 100;
-            font-family: emoji;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
- 
-        @media only screen and (max-width: 1280px){
+    // 현재 슬라이드 인덱스를 가져옵니다.
+    let slideIndex = parseInt(modal.getAttribute("data-slide-index")) || 1;
 
-          .modal-content{width: 90%;}
-          
-          
-        }
+    // 현재 슬라이드 인덱스를 설정합니다.
+    slideIndex = (n > slides.length) ? 1 : (n < 1) ? slides.length : n;
 
+    // 모든 슬라이드를 숨깁니다.
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
+    // 현재 슬라이드를 보여줍니다.
+    slides[slideIndex - 1].style.display = "block";
 
-
-.container { 
-	position: relative; 
-	width: 1200px; 
-	margin: 0 auto; 
-	-webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;	
+    // 현재 슬라이드 인덱스를 설정합니다.
+    modal.setAttribute("data-slide-index", slideIndex);
 }
-.clearfix:after {
-  display: table;
-  content: " ";
-  clear: both;
-}
-#filters {
-	margin:1%;
-	padding:0;
-	list-style:none;
-}
-
-	#filters li {
-		float:left;
-	}
-	
-	#filters li span {
-		display: block;
-		padding:5px 20px;		
-		text-decoration:none;
-		color:#666;
-		cursor: pointer;
-	}
-	
-	#filters li span.active {
-		background: rgb(103, 104, 171);
-		color:#fff;
-	}
- 
-
-
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.container {
-		width: 768px; 
-	}
-}
-
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-	.container { 
-		width: 95%; 
-	}
-	
-	#portfoliolist .portfolio {
-		width:48%;
-		margin:1%;
-	}		
-}
-
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.container {
-		width: 70%;
-	}
-}
+  </script>
 
 
 
-</style>
+  <style>
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      /* margin: 15% auto;  15% from the top and centered */
+      padding: 15px;
+      box-shadow: 7px 8px 55px 1px rgb(0 0 0 / 70%);
+      /*width: 45%;  Could be more or less, depending on screen size */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-content img {
+
+      width: 100%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #fff;
+      float: right;
+      margin-top: -80px;
+      margin-right: -25px;
+      font-size: 48px;
+      font-weight: 100;
+      font-family: emoji;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1280px) {
+
+      .modal-content {
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+
+      .modal-content {
+        width: 75%;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        padding: 10px;
+        box-shadow: 7px 8px 55px 1px rgb(0 0 0 / 70%);
+        position: fixed;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .next {
+        right: 4%;
+      }
+
+      .prev {
+        left: 5%;
+        ;
+      }
+
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 56%;
+        width: auto;
+        margin-top: -22px;
+        padding: 10px;
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        text-shadow: 1px 0px 7px black;
+        user-select: none;
+      }
+
+
+    }
+
+
+
+
+    .container {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .clearfix:after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+
+    #filters {
+      margin: 1%;
+      padding: 0;
+      list-style: none;
+    }
+
+    #filters li {
+      float: left;
+    }
+
+    #filters li span {
+      display: block;
+      padding: 5px 20px;
+      text-decoration: none;
+      color: #666;
+      cursor: pointer;
+    }
+
+    #filters li span.active {
+      background: rgb(103, 104, 171);
+      color: #fff;
+    }
+
+
+
+    /* #Tablet (Portrait) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      .container {
+        width: 768px;
+      }
+    }
+
+    /*  #Mobile (Portrait) - Note: Design for a width of 320px */
+    @media only screen and (max-width: 767px) {
+      .container {
+        width: 95%;
+      }
+
+      #portfoliolist .portfolio {
+        width: 48%;
+        margin: 1%;
+      }
+    }
+
+    /* #Mobile (Landscape) - Note: Design for a width of 480px */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .container {
+        width: 70%;
+      }
+    }
+  </style>
 
 </body>
 

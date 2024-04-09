@@ -721,6 +721,7 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
 }
 
 	.portfolio-wrapper {
+		max-height: 207px;
 		overflow:hidden;
 		position: relative !important;
 		background: #666;
@@ -728,7 +729,9 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
 	}
 
 	.portfolio img {
-		max-width:100%;
+		width:100%;
+		object-fit: cover;
+		object-position: top;
 		position: relative;
         display: block;
 		top:0;
