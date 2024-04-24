@@ -624,10 +624,12 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
   
   .plat-txt3 {
 	font-family:  'S-CoreDream-6Bold';
-	font-size: .95em;
 	letter-spacing: .5px;
-	display: inline-block;
 	color: #888;
+	display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
   }
   
   #plat-desc {
@@ -661,7 +663,7 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
   }
   
   /* image */
-  .alta img {
+ /* .alta img {
     height: 400px;
     position: absolute;
     top: 112px;
@@ -670,7 +672,7 @@ $color: $color-1, $color-2, $color-3, $color-4, $color-5;
 	-webkit-animation: pulsate-fwd 0.5s ease-in-out 3 both;
 	        animation: pulsate-fwd 0.5s ease-in-out 3 both;
 }
-
+*/
 
 .alta2 img {
 	height: 420px;
